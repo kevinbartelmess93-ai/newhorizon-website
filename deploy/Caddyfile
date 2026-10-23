@@ -3,7 +3,10 @@
 }
 
 forum.newhorizonrp.de {
-	reverse_proxy unix//var/discourse/shared/standalone/nginx.http.sock
+	# Discourse (web.socketed) liest die Besucher-IP aus X-Real-IP
+	reverse_proxy unix//var/discourse/shared/standalone/nginx.http.sock {
+		header_up X-Real-IP {remote_host}
+	}
 }
 
 www.newhorizonrp.de {
