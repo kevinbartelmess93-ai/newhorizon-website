@@ -24,7 +24,7 @@ cp containers/app.yml "containers/app.yml.bak-$(date +%F-%H%M)"
 sed -i -E 's|^(\s*)- "?templates/web\.ssl\.template\.yml"?\s*$|\1#- "templates/web.ssl.template.yml"|' containers/app.yml
 sed -i -E 's|^(\s*)- "?templates/web\.letsencrypt\.ssl\.template\.yml"?\s*$|\1#- "templates/web.letsencrypt.ssl.template.yml"|' containers/app.yml
 grep -q 'web.socketed.template' containers/app.yml || sed -i -E '/^\s*- "?templates\/web\.template\.yml"?\s*$/a\  - "templates/web.socketed.template.yml"' containers/app.yml
-sed -i -E 's/^(\s*)- "(80:80|443:443)"/\1#- "\2"/' containers/app.yml
+sed -i -E 's/^(\s*)- "?(80:80|443:443)"?(.*)$/\1#- "\2"\3/' containers/app.yml
 echo "--- geänderte Zeilen:"; grep -nE 'templates/web|80:80|443:443' containers/app.yml
 
 echo "== 4/5 Discourse neu bauen (Forum ca. 10-15 Minuten offline)"
