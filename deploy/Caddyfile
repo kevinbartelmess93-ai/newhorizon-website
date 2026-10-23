@@ -1,0 +1,32 @@
+{
+	email newhorizonrp.info@gmail.com
+}
+
+forum.newhorizonrp.de {
+	reverse_proxy unix//var/discourse/shared/standalone/nginx.http.sock
+}
+
+www.newhorizonrp.de {
+	redir https://newhorizonrp.de{uri} permanent
+}
+
+newhorizonrp.de {
+	root * /var/www/newhorizonrp
+	encode zstd gzip
+
+	@hidden path /.git* /api/cache/* /deploy/* /README.md
+	respond @hidden 404
+
+	header {
+		X-Content-Type-Options nosniff
+		Referrer-Policy strict-origin-when-cross-origin
+		X-Frame-Options SAMEORIGIN
+		Permissions-Policy "camera=(), microphone=(), geolocation=()"
+		Strict-Transport-Security "max-age=31536000"
+	}
+	@static path /assets/*
+	header @static Cache-Control "public, max-age=86400"
+
+	php_fastcgi unix//run/php/php8.1-fpm.sock
+	file_server
+}

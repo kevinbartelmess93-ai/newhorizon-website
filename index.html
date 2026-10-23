@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>New Horizon RP</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="New Horizon RP – deutscher FiveM-Roleplay-Server. Behörden, Firmen, Unterwelt und eine Stadt, die auf dich reagiert. Deine Story. Deine Stadt. Dein Leben.">
+<meta name="theme-color" content="#0b0b1d">
+<meta property="og:type" content="website">
+<meta property="og:title" content="New Horizon RP – FiveM Roleplay">
+<meta property="og:description" content="Deine Story. Deine Stadt. Dein Leben. Jetzt auf New Horizon RP verbinden.">
+<meta property="og:image" content="https://newhorizonrp.de/assets/og-image.jpg">
+<meta property="og:url" content="https://newhorizonrp.de/">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/icon-192.png">
+<link rel="preload" href="assets/fonts/chakra-petch-700.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fonts.css">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="New Horizon RP – nach oben">
+      <img src="assets/icon-192.png" alt="" width="40" height="40">
+      <span>NEW HORIZON RP</span>
+    </a>
+    <nav class="nav" aria-label="Hauptnavigation">
+      <a href="#stadt">Die Stadt</a>
+      <a href="#fraktionen">Fraktionen</a>
+      <a href="#einstieg">Einstieg</a>
+      <a href="#news">News</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="actions">
+      <a class="btn btn-ghost" href="https://forum.newhorizonrp.de">Forum</a>
+      <a class="btn btn-sun js-discord" href="https://discord.gg/DEIN-EINLADUNGSCODE">Discord</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero" aria-labelledby="hero-title">
+    <img class="poster" src="assets/hero-poster.webp" alt="" aria-hidden="true">
+    <video autoplay muted loop playsinline preload="metadata" poster="assets/hero-poster.webp" aria-hidden="true">
+      <source src="assets/hero.mp4" type="video/mp4">
+    </video>
+    <div class="wrap">
+      <img class="hero-logo" src="assets/logo.webp" alt="New Horizon RP" width="340" height="340">
+      <div class="status" id="status" data-state="loading" role="status" aria-live="polite">
+        <span class="dot"></span><span class="text">Serverstatus wird geladen …</span>
+      </div>
+      <h1 id="hero-title">Deine Story. Deine Stadt. <span class="sun">Dein Leben.</span></h1>
+      <p class="lead">Deutscher FiveM-Roleplay-Server mit Behörden, echter Wirtschaft und einer Unterwelt, die nicht schläft. Los Santos wartet auf deine Geschichte.</p>
+      <div class="cta">
+        <a class="btn btn-sun" href="fivem://connect/136.243.19.52:30120">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          Jetzt verbinden
+        </a>
+        <a class="btn btn-ghost js-discord" href="https://discord.gg/DEIN-EINLADUNGSCODE">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.6 5.3A16.6 16.6 0 0 0 15.5 4l-.5 1a15 15 0 0 0-6 0l-.5-1a16.6 16.6 0 0 0-4.1 1.3C1.8 9.2 1.1 13 1.4 16.7a16.7 16.7 0 0 0 5 2.5l1.1-1.8c-.6-.2-1.2-.5-1.8-.9l.4-.3a11.9 11.9 0 0 0 11.8 0l.4.3c-.6.4-1.2.7-1.8.9l1.1 1.8a16.7 16.7 0 0 0 5-2.5c.4-4.3-.7-8-3-11.4ZM8.7 14.5c-1 0-1.8-.9-1.8-2s.8-2 1.8-2 1.8.9 1.8 2-.8 2-1.8 2Zm6.6 0c-1 0-1.8-.9-1.8-2s.8-2 1.8-2 1.8.9 1.8 2-.8 2-1.8 2Z"/></svg>
+          Discord beitreten
+        </a>
+      </div>
+      <div class="console" aria-label="Verbindungsbefehl für die FiveM-Konsole">
+        <span class="label">F8</span>
+        <code id="connect-cmd">connect 136.243.19.52:30120</code>
+        <button type="button" id="copy-connect">Kopieren</button>
+      </div>
+      <p class="hint">Kein Klick möglich? FiveM starten, <kbd>F8</kbd> drücken und den Befehl einfügen.</p>
+    </div>
+  </section>
+
+  <section class="block" id="stadt" aria-labelledby="stadt-title">
+    <div class="wrap">
+      <div class="head">
+        <span class="eyebrow">Die Stadt</span>
+        <h2 id="stadt-title">Los Santos, wie es lebt und arbeitet</h2>
+        <p class="lead">Über hundert eigene Systeme greifen ineinander. Was du tust, hat Folgen für Wirtschaft, Kriminalität und Politik der Stadt.</p>
+      </div>
+      <div class="city">
+        <article>
+          <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 3 4 6v6c0 4.5 3.4 8.3 8 9 4.6-.7 8-4.5 8-9V6l-8-3Z"/></svg>Behörden &amp; Justiz</h3>
+          <p>LSPD und Sheriff mit gemeinsamem Dispatch und echten Zuständigkeiten, FIB, Gericht und Justizvollzug. Vom Strafzettel bis zum Urteil.</p>
+          <ul><li>Dispatch 4.1</li><li>Beweise &amp; Ermittlungen</li><li>Gericht</li><li>Strafvollzug</li></ul>
+        </article>
+        <article>
+          <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>Wirtschaft &amp; Firmen</h3>
+          <p>Gründe eine Firma, schließe Verträge, zahl Steuern oder investiere in Anteile anderer Spieler. Lieferketten bestimmen, was es in den Läden gibt.</p>
+          <ul><li>Firmen &amp; Verträge</li><li>Aktien &amp; Investments</li><li>Kredite</li><li>Lieferketten</li></ul>
+        </article>
+        <article>
+          <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 11 12 4l9 7M5 10v10h14V10"/></svg>Wohnen &amp; Fahrzeuge</h3>
+          <p>Eigene Häuser und Garagen, ein Autohaus, Tuning und Waschanlage. Den Führerschein machst du vorher in der Fahrschule.</p>
+          <ul><li>Häuser</li><li>Garagen &amp; Abschlepphof</li><li>Tuning</li><li>Fahrschule</li></ul>
+        </article>
+        <article>
+          <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="7" y="2.5" width="10" height="19" rx="2"/><path d="M11 18.5h2"/></svg>Horizon One</h3>
+          <p>Das eigene Smartphone der Stadt: Banking, Nachrichten, Bürgerportal mit Rezepten, Zertifikaten und Terminen.</p>
+          <ul><li>Banking</li><li>Bürgerportal</li><li>Jobtablet</li></ul>
+        </article>
+        <article>
+          <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 3a9 9 0 1 0 9 9M12 3v9l6.4-6.4"/></svg>Unterwelt</h3>
+          <p>Organisiertes Verbrechen mit Einfluss und Revieren, Überfälle, Schmuggel und Geldwäsche. Wer zu laut wird, bekommt Besuch.</p>
+          <ul><li>Heists</li><li>Schmuggel</li><li>Geldwäsche</li><li>Informanten</li></ul>
+        </article>
+        <article>
+          <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 21h18M5 21V9l7-5 7 5v12M9 21v-6h6v6"/></svg>Lebendige Stadt</h3>
+          <p>Stadtteile reagieren auf das, was passiert. Dazu Stadt-Events, Wahlen und eine Regierung, die von Spielern geführt wird.</p>
+          <ul><li>City-Events</li><li>Wahlen &amp; Politik</li><li>Stadtteile</li></ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="fraktionen" aria-labelledby="fraktionen-title">
+    <div class="wrap">
+      <div class="head">
+        <span class="eyebrow">Fraktionen &amp; Firmen</span>
+        <h2 id="fraktionen-title">Such dir deinen Platz in der Stadt</h2>
+        <p class="lead">Alle Fraktionen sind mit Rängen und eigenem Firmenkonto angelegt. Bewerbungen laufen privat über das Forum.</p>
+      </div>
+      <div class="factions">
+        <div class="faction-group">
+          <h3>Staat &amp; Sicherheit</h3>
+          <ul>
+            <li><span class="tag">LSPD</span><span>Los Santos Police Department</span></li>
+            <li><span class="tag">BCSO</span><span>Blaine County Sheriff</span></li>
+            <li><span class="tag">FIB</span><span>Federal Investigation Bureau</span></li>
+            <li><span class="tag">DOC</span><span>Justizvollzug</span></li>
+            <li><span class="tag">JUS</span><span>Justiz &amp; Gericht</span></li>
+            <li><span class="tag">GOV</span><span>Regierung &amp; Countyverwaltung</span></li>
+          </ul>
+        </div>
+        <div class="faction-group">
+          <h3>Rettung &amp; Medien</h3>
+          <ul>
+            <li><span class="tag">LSMD</span><span>Rettungsdienst</span></li>
+            <li><span class="tag">WZL</span><span>Weazel News</span></li>
+            <li><span class="tag">LAW</span><span>Anwaltskanzlei</span></li>
+            <li><span class="tag">SEC</span><span>Sicherheitsdienst</span></li>
+          </ul>
+        </div>
+        <div class="faction-group">
+          <h3>Handel &amp; Handwerk</h3>
+          <ul>
+            <li><span class="tag">MECH</span><span>Werkstatt</span></li>
+            <li><span class="tag">TUNE</span><span>Tuning-Werkstatt</span></li>
+            <li><span class="tag">CAR</span><span>Autohaus</span></li>
+            <li><span class="tag">INS</span><span>Versicherung</span></li>
+            <li><span class="tag">DRV</span><span>Fahrschule</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="factions-cta">
+        <a class="btn btn-ghost" href="https://forum.newhorizonrp.de/t/so-bewirbst-du-dich-bei-new-horizon-rp/15">Zur Bewerbung</a>
+        <span>Gangs und eigene Firmen gründest du im Spiel. Regeln dazu stehen in §11 des Regelwerks.</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="einstieg" aria-labelledby="einstieg-title">
+    <div class="wrap">
+      <div class="head">
+        <span class="eyebrow">Einstieg</span>
+        <h2 id="einstieg-title">In drei Schritten in der Stadt</h2>
+      </div>
+      <ol class="steps">
+        <li>
+          <h3>GTA V und FiveM installieren</h3>
+          <p>Du brauchst eine legale PC-Version von GTA V. FiveM gibt es kostenlos auf <a href="https://fivem.net">fivem.net</a>.</p>
+        </li>
+        <li>
+          <h3>Discord beitreten und Regeln lesen</h3>
+          <p>Auf dem <a class="js-discord" href="https://discord.gg/DEIN-EINLADUNGSCODE">Discord</a> findest du alle Infos zur Einreise. Lies vorher das <a href="https://forum.newhorizonrp.de/t/offizielles-server-regelwerk/19">Regelwerk</a>.</p>
+        </li>
+        <li>
+          <h3>Verbinden und Charakter erstellen</h3>
+          <p>Klick auf „Jetzt verbinden“ oder gib in FiveM <code>connect 136.243.19.52:30120</code> ein. Danach erstellst du deinen Charakter.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="block" id="news" aria-labelledby="news-title">
+    <div class="wrap">
+      <div class="head">
+        <span class="eyebrow">Ankündigungen</span>
+        <h2 id="news-title">Neues aus der Stadt</h2>
+      </div>
+      <div class="news" id="news-list">
+        <p class="empty">Die neuesten Ankündigungen findest du im <a href="https://forum.newhorizonrp.de/c/ankuendigungen/5">Forum</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="regeln" aria-labelledby="regeln-title">
+    <div class="wrap rules">
+      <div class="head">
+        <span class="eyebrow">Regelwerk</span>
+        <h2 id="regeln-title">Realistisches Roleplay steht an erster Stelle</h2>
+        <p class="lead">Ein paar Regeln, die neue Spieler am häufigsten übersehen. Das vollständige Regelwerk mit 21 Paragraphen steht im Forum.</p>
+        <p><a class="btn btn-ghost" href="https://forum.newhorizonrp.de/t/offizielles-server-regelwerk/19">Vollständiges Regelwerk</a></p>
+      </div>
+      <ol class="rule-list">
+        <li><b>§8</b><div><strong>New Life Rule</strong><span>Nach dem Tod erinnerst du dich an nichts und kehrst 15 Minuten lang nicht zum Ort zurück.</span></div></li>
+        <li><b>§9</b><div><strong>Safezones</strong><span>Krankenhaus, Jobcenter, Lobby der Polizeistation und Spawnbereiche sind tabu für Gewalt.</span></div></li>
+        <li><b>§12</b><div><strong>Schussankündigung</strong><span>Vor einer Schießerei kommt eine klare Ansage, außer bei Selbstverteidigung.</span></div></li>
+        <li><b>§7</b><div><strong>Combat Logging</strong><span>Kein Ausloggen während Schießereien, Verfolgungen oder Polizeikontrollen.</span></div></li>
+        <li><b>§20</b><div><strong>Cheating</strong><span>Mod-Menüs, ESP und Aimlocks führen zum permanenten Ausschluss.</span></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="block" id="team" aria-labelledby="team-title">
+    <div class="wrap">
+      <div class="head">
+        <span class="eyebrow">Team</span>
+        <h2 id="team-title">Die Leute hinter New Horizon</h2>
+      </div>
+      <div class="team" id="team-list">
+        <div class="member"><span class="initial">P</span><div><strong>Predi</strong><span style="--rank:#ff5468">Projektleitung</span></div></div>
+        <div class="member"><span class="initial">P</span><div><strong>pika9696</strong><span style="--rank:#ff8a2a">Stv. Projektleitung</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="faq" aria-labelledby="faq-title">
+    <div class="wrap">
+      <div class="head">
+        <span class="eyebrow">FAQ</span>
+        <h2 id="faq-title">Häufige Fragen</h2>
+      </div>
+      <div class="faq">
+        <details>
+          <summary>Was brauche ich, um mitzuspielen?</summary>
+          <div><p>Eine legale PC-Version von GTA V, den kostenlosen FiveM-Client, ein funktionierendes Mikrofon und einen Discord-Account.</p></div>
+        </details>
+        <details>
+          <summary>Wie bewerbe ich mich bei einer Fraktion?</summary>
+          <div><p>Melde dich mit Discord im <a href="https://forum.newhorizonrp.de">Forum</a> an und nutze den Button im angepinnten Thema unter <a href="https://forum.newhorizonrp.de/c/bewerbungen/7">Bewerbungen</a>. Deine Bewerbung sehen nur du und das Bewerbungsteam.</p></div>
+        </details>
+        <details>
+          <summary>Ich wurde gebannt. Was kann ich tun?</summary>
+          <div><p>Stell einen Entbannungsantrag im <a href="https://forum.newhorizonrp.de/c/entbannung/8">Forum</a>. Bleib sachlich und erklär, was aus deiner Sicht passiert ist.</p></div>
+        </details>
+        <details>
+          <summary>Ich habe einen Bug gefunden.</summary>
+          <div><p>Melde ihn im Forum unter <a href="https://forum.newhorizonrp.de/c/bugs/9">Bugs</a>. Die Vorlage fragt alles ab, was wir zum Nachstellen brauchen. Bugs auszunutzen ist verboten (§1.4).</p></div>
+        </details>
+        <details>
+          <summary>Wie viele Spieler passen auf den Server?</summary>
+          <div><p>Bis zu 128 gleichzeitig. Wie viele gerade online sind, siehst du oben auf dieser Seite und im Forum.</p></div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" aria-labelledby="final-title">
+    <div class="wrap final">
+      <h2 id="final-title">Bereit für deine Geschichte?</h2>
+      <div class="cta">
+        <a class="btn btn-sun" href="fivem://connect/136.243.19.52:30120">Jetzt verbinden</a>
+        <a class="btn btn-ghost js-discord" href="https://discord.gg/DEIN-EINLADUNGSCODE">Discord beitreten</a>
+        <a class="btn btn-ghost" href="https://forum.newhorizonrp.de">Zum Forum</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <a class="brand" href="#top"><img src="assets/icon-192.png" alt="" width="40" height="40"><span>NEW HORIZON RP</span></a>
+      <nav class="foot-links" aria-label="Fußzeile">
+        <a href="https://forum.newhorizonrp.de">Forum</a>
+        <a class="js-discord" href="https://discord.gg/DEIN-EINLADUNGSCODE">Discord</a>
+        <a href="https://forum.newhorizonrp.de/t/offizielles-server-regelwerk/19">Regelwerk</a>
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+      </nav>
+    </div>
+    <p class="legal-note">New Horizon RP ist ein Community-Projekt und steht in keiner Verbindung zu Rockstar Games, Take-Two Interactive oder Cfx.re. Grand Theft Auto und GTA sind Marken von Take-Two Interactive.</p>
+  </div>
+</footer>
+
+<script src="assets/site.js" defer></script>
+</body>
+</html>
