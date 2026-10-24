@@ -33,3 +33,10 @@ newhorizonrp.de {
 	php_fastcgi unix//run/php/php8.1-fpm.sock
 	file_server
 }
+
+# Team-Panel (new_horizon_guard im FiveM-Server) – verschlüsselt über HTTPS
+panel.newhorizonrp.de {
+	redir / /new_horizon_guard/
+	reverse_proxy /new_horizon_guard/* 136.243.19.52:30120
+	header Strict-Transport-Security "max-age=31536000"
+}
