@@ -91,6 +91,8 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 .btn-sun:hover { color: #160a12; filter: brightness(1.08); }
 .btn-ghost { border-color: var(--line); color: var(--ink); background: color-mix(in srgb, var(--panel) 70%, transparent); }
 .btn-ghost:hover { border-color: var(--muted); color: var(--ink); }
+.btn-icon { padding-inline: .7rem; }
+.btn-icon .tt-icon { display: block; }
 .btn svg { width: 1.1em; height: 1.1em; flex: none; }
 
 /* ---------- Hero ---------- */
