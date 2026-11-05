@@ -236,3 +236,15 @@ footer .wrap { padding-block: 2.2rem calc(2.2rem + env(safe-area-inset-bottom, 0
 .doc address { font-style: normal; }
 .todo { background: color-mix(in srgb, var(--sun) 22%, transparent); outline: 1px dashed var(--sun); color: var(--ink); padding: 0 .25em; border-radius: 4px; }
 .doc .updated { color: var(--muted); font-size: var(--step--1); }
+
+/* Event-Hinweis unter der Kopfzeile (blendet sich nach dem Event selbst aus) */
+.eventbar { background: linear-gradient(90deg, rgba(255,138,42,.18), rgba(73,198,255,.14)); border-bottom: 1px solid var(--line); }
+.eventbar[hidden] { display: none; }
+.eventbar .wrap { display: flex; flex-wrap: wrap; align-items: center; gap: .4rem 1rem; padding-block: .65rem; font-size: .95rem; }
+.eventbar strong { font-family: var(--display); letter-spacing: .02em; }
+.eb-tag { background: var(--sun); color: var(--night); font-weight: 700; font-size: .72rem; text-transform: uppercase; letter-spacing: .08em; padding: .18rem .5rem; border-radius: 999px; }
+.eb-when { color: var(--muted); }
+.eb-count { color: var(--sun); font-weight: 700; }
+.eb-link { margin-left: auto; color: var(--neon); text-decoration: none; font-weight: 600; }
+.eb-link:hover { text-decoration: underline; }
+@media (max-width: 640px) { .eb-link { margin-left: 0; } }

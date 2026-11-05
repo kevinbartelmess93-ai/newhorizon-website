@@ -87,4 +87,20 @@
     } catch { /* statische Liste bleibt stehen */ }
   }
   loadTeam();
+
+  // Event-Hinweis: Countdown, nach dem Event ausblenden
+  (function eventbar() {
+    const bar = document.getElementById('eventbar');
+    if (!bar) return;
+    const end = new Date(bar.dataset.end), start = new Date('2026-11-21T19:00:00+01:00');
+    const out = document.getElementById('eb-count');
+    function tick() {
+      const now = new Date();
+      if (now >= end) { bar.hidden = true; return; }
+      const day = (d) => Date.parse(d.toLocaleDateString('sv-SE', { timeZone: 'Europe/Berlin' }));
+      const days = Math.round((day(start) - day(now)) / 86400000);
+      out.textContent = now >= start ? 'Läuft gerade!' : days <= 0 ? 'Heute!' : days === 1 ? 'Morgen!' : 'Noch ' + days + ' Tage';
+    }
+    tick(); setInterval(tick, 60000);
+  })();
 })();
