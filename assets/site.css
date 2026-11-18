@@ -248,3 +248,7 @@ footer .wrap { padding-block: 2.2rem calc(2.2rem + env(safe-area-inset-bottom, 0
 .eb-link { margin-left: auto; color: var(--neon); text-decoration: none; font-weight: 600; }
 .eb-link:hover { text-decoration: underline; }
 @media (max-width: 640px) { .eb-link { margin-left: 0; } }
+
+.tiktok-box { display: grid; gap: 1rem; justify-items: center; text-align: center; padding: 2rem 1.4rem; border: 1px dashed var(--line); border-radius: var(--radius); background: var(--night-2); color: var(--muted); }
+.tiktok-box.loaded { border: 0; background: none; padding: 0; }
+.tiktok-box .tiktok-embed { margin: 0 auto; }

@@ -103,4 +103,19 @@
     }
     tick(); setInterval(tick, 60000);
   })();
+
+  // TikTok-Profil erst nach Klick laden (keine Daten an TikTok ohne Zustimmung)
+  const ttBtn = document.getElementById('tiktok-load');
+  const ttBox = document.getElementById('tiktok-box');
+  function loadTikTok() {
+    if (!ttBox) return;
+    ttBox.classList.add('loaded');
+    ttBox.innerHTML = '<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@newhorizon_rp_" data-unique-id="newhorizon_rp_" data-embed-type="creator" style="max-width:780px;min-width:288px;"><section><a target="_blank" rel="noopener" href="https://www.tiktok.com/@newhorizon_rp_?refer=creator_embed">@newhorizon_rp_</a></section></blockquote>';
+    const sc = document.createElement('script');
+    sc.async = true; sc.src = 'https://www.tiktok.com/embed.js';
+    document.body.appendChild(sc);
+    try { localStorage.setItem('nh_tiktok', '1'); } catch {}
+  }
+  if (ttBtn) ttBtn.addEventListener('click', loadTikTok);
+  try { if (localStorage.getItem('nh_tiktok') === '1') loadTikTok(); } catch {}
 })();
